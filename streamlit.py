@@ -7,7 +7,7 @@ import cv2
 from tensorflow import keras
 import numpy as np
 
-st.title('Sen klasslardagi istalgan rasmingni chiz!Men esa uni bashorat qilaman')
+st.title('Sen klasslardagi istalgan rasmni chiz!Men esa uni bashorat qilaman')
 class_names = ['airplane','automobile','bird','cat','deer','dog','frog','horse','ship','truck']
 stroke_width = st.sidebar.slider("Stroke width: ", 1, 25, 10)
 choose = st.sidebar.selectbox(
