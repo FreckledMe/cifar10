@@ -1,12 +1,11 @@
 import pandas as pd
-from PIL import Image
+from PIL import Image,ImageOps
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import matplotlib.pyplot as plt
 import cv2
 from tensorflow import keras
 import numpy as np
-from PIL import Image,ImageOps
 
 st.title('Sen klasslardagi istalgan rasmingni chiz!Men esa uni bashorat qilaman')
 class_names = ['airplane','automobile','bird','cat','deer','dog','frog','horse','ship','truck']
