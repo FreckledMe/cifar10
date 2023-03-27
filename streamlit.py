@@ -22,8 +22,8 @@ if choose:
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.3)",
     stroke_width=stroke_width,
-    stroke_color='#FFFFFF',
-    background_color='#000000',
+    stroke_color='#000000',
+    background_color='#FFFFFF',
     update_streamlit=True,
     width = 250,
     height=250,
@@ -34,11 +34,11 @@ canvas_result = st_canvas(
 
 if st.button(label='Predict') and canvas_result.image_data is not None:
     img = canvas_result.image_data
-    img = cv2.cvtColor(img,cv2.COLOR_BGRA2GRAY)
-    img = cv2.resize(img,(28,28))
+    img = cv2.cvtColor(img,cv2.COLOR_BGRA2RGB)
+    img = cv2.resize(img,(32,32))
     img = img.astype('float32')
     img /= 255
     img = np.array([img])
-    model = keras.models.load_model('model\cnn_model.h5')
+    model = keras.models.load_model('model\cifar10.h5')
     st.text(class_names[np.argmax(model.predict(img))])
 
