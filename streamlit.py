@@ -38,6 +38,6 @@ if st.button(label='Predict') and canvas_result.image_data is not None:
     img = img.astype('float32')
     img /= 255
     img = np.array([img])
-    model = keras.models.load_model('model\cifar10.h5')
+    model = keras.models.load_model('model/cifar10.h5')
     st.text(class_names[np.argmax(model.predict(img))])
 
