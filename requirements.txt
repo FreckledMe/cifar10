@@ -1,8 +1,8 @@
-pandas
-pillow
-streamlit
-matplotlib
-opencv-python
 tensorflow
-numpy
+streamlit
+pandas
+opencv-python
+pillow
 streamlit_drawable_canvas
+numpy
+matplotlib
