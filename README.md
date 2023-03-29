@@ -19,7 +19,6 @@ The classes are:
 |8 	   |  ship               |
 |9 	   |  truck              |
 
-<a><img src="image/output.png"/></a>
 
 [Streamlit](https://freckledme-cifar10-streamlit-7fpz30.streamlit.app/)
 ![Screenshot](image/deploy.png)
